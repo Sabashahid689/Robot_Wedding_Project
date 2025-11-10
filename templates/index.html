@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🤖 Robot Wedding 💍</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🤖💍 Robot Wedding Ceremony 💖</h1>
+
+  <!-- 🎉 Stage Area -->
+  <div class="stage">
+    <div class="robot" id="robot1">
+      <img src="{{ url_for('static', filename='robotmk.jpg') }}" class="robot-img" alt="Robot Groom">
+    </div>
+
+    <div class="heart" id="heart">❤️</div>
+
+    <div class="robot" id="robot2">
+      <img src="{{ url_for('static', filename='robot_bride.jpg') }}" class="robot-img" alt="Robot Bride">
+    </div>
+  </div>
+
+  <button id="celebrateBtn">💐 Start Celebration</button>
+
+  <!-- 🎵 Wedding Music -->
+  <audio id="weddingMusic" src="{{ url_for('static', filename='gulimata.mp3') }}"></audio>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
